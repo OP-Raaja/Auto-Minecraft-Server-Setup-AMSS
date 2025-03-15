@@ -1,0 +1,8 @@
+2025-03-15 10:49:14,091 - DEBUG - Showing intro elements
+2025-03-15 10:49:14,111 - DEBUG - Shown all intro elements successfully
+2025-03-15 10:49:17,813 - ERROR - Invalid version chosen by the user, user choosen version=12123
+2025-03-15 10:49:18,895 - CRITICAL - 
+Keyboard Interrupt by the user
+Exiting the program.
+2025-03-15 10:49:18,904 - DEBUG - Resetting all coloroma styles
+2025-03-15 10:49:18,910 - DEBUG - All colorama styles resetted successfully
