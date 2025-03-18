@@ -4,7 +4,7 @@
 ---
 
 ## **Overview**
-Setting up a Minecraft server can be a tedious process, but **Auto Minecraft Server Setup (AMSS)** simplifies it for you. With AMSS, you can create a fully functional server in just a few steps, complete with automatic directory creation, server file setup, and facilitated playit.gg setup for effortless port forwarding.
+Setting up a Minecraft server can be a tedious process, but **Auto Minecraft Server Setup (AMSS)** simplifies it for you. With AMSS, you can create a fully functional server in just a few steps, complete with automatic directory creation, server file setup, and facilitated playit.gg setup for effortless tunneling so that you can play with your friends without port forwarding.
 
 ---
 
