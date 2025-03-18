@@ -25,7 +25,7 @@ Setting up a Minecraft server can be a tedious process, but **Auto Minecraft Ser
 
 ## **Installation**
 ### **Using the Executable**
-1. Download the latest `.exe` file from the [Releases](https://github.com/OP-Raaja/Auto-Minecraft-Server-Setup-AMSS/releases) section.
+1. Download the latest `AMSS.exe` file from the [Releases](https://github.com/OP-Raaja/Auto-Minecraft-Server-Setup-AMSS/releases) section.
 2. Run the executable and follow the on-screen instructions.
 
 ### **Running from Source**
