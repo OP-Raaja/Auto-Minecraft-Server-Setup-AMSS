@@ -32,7 +32,7 @@ Setting up a Minecraft server can be a tedious process, but **Auto Minecraft Ser
 1. Clone the repository:
    ```bash
    git clone https://github.com/OP-Raaja/Auto-Minecraft-Server-Setup-AMSS.git
-   cd Auto-Minecraft-Server-Setup-AMSS
+   cd Auto-Minecraft-Server-Setup-AMSS\AMSS
 2. Install the required dependencies:
     ```bash
     pip install -r requirements.txt

@@ -3,9 +3,9 @@ import os
 from colorama import Fore, Style, Back
 import sys
 
-def logger_setup():
+def logger_setup() -> None:
 
-    logger = logging.getLogger()
+    logger: logging.Logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
 
     '''
@@ -53,7 +53,7 @@ It sends the log message to clean_message function to remove any ANSI sequence f
 This class is used in setting the file_handler format in file_formatter.
 '''
 class CustomFormatter(logging.Formatter):
-    def format(self, record):
+    def format(self, record: logging.LogRecord) -> str:
         original_message = record.msg
         try:
             record.msg = clean_message(record.msg)
@@ -61,13 +61,13 @@ class CustomFormatter(logging.Formatter):
         finally:
             record.msg = original_message
 
-ANSI_seq = [Fore.GREEN, Fore.RED, Fore.CYAN, Fore.YELLOW, Fore.BLUE, Back.GREEN, Style.RESET_ALL]
+ANSI_seq: list[str] = [Fore.GREEN, Fore.RED, Fore.CYAN, Fore.YELLOW, Fore.BLUE, Back.GREEN, Style.RESET_ALL]
 
 '''
 Creating a new function to remove the ANSI sequence form logs before saving it to the log.log file.
 This function runs a for loop which takes each ANSI sequence defined in ANSI_seq and replaces it with an empty string in the log message.
 '''
-def clean_message(msg):
+def clean_message(msg: str) -> str:
     for seq in ANSI_seq:
         msg = msg.replace(seq, "")
     return msg
@@ -79,7 +79,7 @@ The filter method checks if the log record's level is ERROR and if it has an att
 If both conditions are met, the error message will be shown in the console; otherwise, it will be filtered out.
 '''
 class CustomErrorFilter(logging.Filter):
-    def filter(self, record):
+    def filter(self, record: logging.LogRecord) -> bool:
         if record.levelno == logging.ERROR:
             return getattr(record, "show_in_console", False)
         return True

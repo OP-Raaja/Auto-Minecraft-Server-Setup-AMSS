@@ -1,6 +1,8 @@
+Minecraft_Server/
 __pycache__/
-build/
 dist/
+build/
+.vscode/
 *.log
 *.ico
 *.spec
